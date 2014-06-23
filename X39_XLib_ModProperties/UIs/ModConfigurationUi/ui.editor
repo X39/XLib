@@ -1,0 +1,18 @@
+IMPORTANT NOTE!
+This is ONLY for layout!
+its not recommended to use this here as much stuff is needed to be edited per hand
+
+$[
+	1.063,
+	["XLib_ModConfiguration",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,1,0],
+	[2200,"",[2,"",["0.5 * GUI_GRID_W + GUI_GRID_X","-9 * GUI_GRID_H + GUI_GRID_Y","58 * GUI_GRID_W","34.5 * GUI_GRID_H"],[-1,-1,-1,-1],[0,0,0,0.4],[-1,-1,-1,-1],"","-1"],[]],
+	[2201,"",[2,"",["-18.5 * GUI_GRID_W + GUI_GRID_X","-9 * GUI_GRID_H + GUI_GRID_Y","18.5 * GUI_GRID_W","41 * GUI_GRID_H"],[-1,-1,-1,-1],[0,0,0,0.4],[-1,-1,-1,-1],"","-1"],[]],
+	[1000,"label_selection",[1,"label_selection",["0.108125 * safezoneW + safezoneX","0.038 * safezoneH + safezoneY","0.180469 * safezoneW","0.022 * safezoneH"],[1,1,1,1],[1,1,1,1],[-1,-1,-1,-1],"","-1"],[]],
+	[1001,"",[1,"label_selection",["0.304062 * safezoneW + safezoneX","0.038 * safezoneH + safezoneY","0.587812 * safezoneW","0.022 * safezoneH"],[1,1,1,1],[1,1,1,1],[-1,-1,-1,-1],"","-1"],[]],
+	[1500,"lb_selection",[1,"",["0.108125 * safezoneW + safezoneX","0.071 * safezoneH + safezoneY","0.180469 * safezoneW","0.847 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1501,"mclb_configuration",[1,"",["0.304062 * safezoneW + safezoneX","0.071 * safezoneH + safezoneY","0.587812 * safezoneW","0.704 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[2202,"",[2,"",["0.5 * GUI_GRID_W + GUI_GRID_X","26 * GUI_GRID_H + GUI_GRID_Y","58 * GUI_GRID_W","8 * GUI_GRID_H"],[-1,-1,-1,-1],[0,0,0,0.4],[-1,-1,-1,-1],"","-1"],[]],
+	[1002,"label_selectionInfo",[1,"label_selectionInfo",["0.304062 * safezoneW + safezoneX","0.808 * safezoneH + safezoneY","0.587812 * safezoneW","0.022 * safezoneH"],[1,1,1,1],[1,1,1,1],[-1,-1,-1,-1],"","-1"],[]],
+	[1100,"text_selectionInfo",[1,"",["0.304062 * safezoneW + safezoneX","0.841 * safezoneH + safezoneY","0.587812 * safezoneW","0.121 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1600,"btn_saveProfileNameSpace",[1,"btn_saveProfileNameSpace",["0.102969 * safezoneW + safezoneX","0.94 * safezoneH + safezoneY","0.190781 * safezoneW","0.033 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]

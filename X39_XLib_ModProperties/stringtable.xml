@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA3">
+	<Package name="X39_XLib_ModProperties">
+	<Container name="escHook">
+			<Key ID="STR_X39_XLib_ModProperties_escHook_DisplayText">
+				<English>Mod configuration</English>
+				<German>Mod Konfiguration</German>
+				<Hungarian>Mod configuration</Hungarian>
+				<Italian>Mod configuration</Italian>
+				<French>Mod configuration</French>
+				<Russian>Mod configuration</Russian>
+				<Polish>Mod configuration</Polish>
+			</Key>
+			<Key ID="STR_X39_XLib_ModProperties_escHook_Tooltip">
+				<English>Opens a new dialog to configure the current mods running</English>
+				<German>Öffnet einen neuen Dialog um Modifikationen zu konfigurieren</German>
+				<Hungarian>Opens a new dialog to configure the current mods running</Hungarian>
+				<Italian>Opens a new dialog to configure the current mods running</Italian>
+				<French>Opens a new dialog to configure the current mods running</French>
+				<Russian>Opens a new dialog to configure the current mods running</Russian>
+				<Polish>Opens a new dialog to configure the current mods running</Polish>
+			</Key>
+		</Container>
+	<Container name="modPropertiesUi">
+			<Key ID="STR_X39_XLib_ModProperties_modPropertiesUi_labelSelectionText">
+				<English>Mod selection</English>
+				<German>Mod Auswahl</German>
+				<Hungarian>Mod selection</Hungarian>
+				<Italian>Mod selection</Italian>
+				<French>Mod selection</French>
+				<Russian>Mod selection</Russian>
+				<Polish>Mod selection</Polish>
+			</Key>
+			<Key ID="STR_X39_XLib_ModProperties_modPropertiesUi_labelConfigurationText">
+				<English>Mod configuration</English>
+				<German>Mod Konfiguration</German>
+				<Hungarian>Mod configuration</Hungarian>
+				<Italian>Mod configuration</Italian>
+				<French>Mod configuration</French>
+				<Russian>Mod configuration</Russian>
+				<Polish>Mod configuration</Polish>
+			</Key>
+			<Key ID="STR_X39_XLib_ModProperties_modPropertiesUi_labelConfigurationSelectionInfoText">
+				<English>Mod configuration - Selection info panel</English>
+				<German>Mod Konfiguration - Informations Fenster</German>
+				<Hungarian>Mod configuration - Selection info panel</Hungarian>
+				<Italian>Mod configuration - Selection info panel</Italian>
+				<French>Mod configuration - Selection info panel</French>
+				<Russian>Mod configuration - Selection info panel</Russian>
+				<Polish>Mod configuration - Selection info panel</Polish>
+			</Key>
+			<Key ID="STR_X39_XLib_ModProperties_modPropertiesUi_btnSaveProfileNameSpace">
+				<English>save profileNamespace</English>
+				<German>ProfileNamespace speichern</German>
+				<Hungarian>save profileNamespace</Hungarian>
+				<Italian>save profileNamespace</Italian>
+				<French>save profileNamespace</French>
+				<Russian>save profileNamespace</Russian>
+				<Polish>save profileNamespace</Polish>
+			</Key>
+		</Container>
+	<Container name="valueEditingUi">
+			<Key ID="STR_X39_XLib_ModProperties_valueEditingUi_btn_default">
+				<English>Reset to default</English>
+				<German>Zurücksetzen</German>
+				<Hungarian>Reset to default</Hungarian>
+				<Italian>Reset to default</Italian>
+				<French>Reset to default</French>
+				<Russian>Reset to default</Russian>
+				<Polish>Reset to default</Polish>
+			</Key>
+			<Key ID="STR_X39_XLib_ModProperties_valueEditingUi_label_propertyName">
+				<English>Current property</English>
+				<German>Aktuelle Einstellung</German>
+				<Hungarian>Current property</Hungarian>
+				<Italian>Current property</Italian>
+				<French>Current property</French>
+				<Russian>Current property</Russian>
+				<Polish>Current property</Polish>
+			</Key>
+			<Key ID="STR_X39_XLib_ModProperties_valueEditingUi_label_value">
+				<English>Property value</English>
+				<German>Einstellungs Wert</German>
+				<Hungarian>Property value</Hungarian>
+				<Italian>Property value</Italian>
+				<French>Property value</French>
+				<Russian>Property value</Russian>
+				<Polish>Property value</Polish>
+			</Key>
+			<Key ID="STR_X39_XLib_ModProperties_valueEditingUi_label_title">
+				<English>Value editing UI</English>
+				<German>Wert änderungs Oberfläche</German>
+				<Hungarian>Value editing UI</Hungarian>
+				<Italian>Value editing UI</Italian>
+				<French>Value editing UI</French>
+				<Russian>Value editing UI</Russian>
+				<Polish>Value editing UI</Polish>
+			</Key>
+		</Container>
+	<Container name="valueSelectionUi">
+			<Key ID="STR_X39_XLib_ModProperties_valueSelectionUi_btn_default">
+				<English>Reset to default</English>
+				<German>Zurücksetzen</German>
+				<Hungarian>Reset to default</Hungarian>
+				<Italian>Reset to default</Italian>
+				<French>Reset to default</French>
+				<Russian>Reset to default</Russian>
+				<Polish>Reset to default</Polish>
+			</Key>
+			<Key ID="STR_X39_XLib_ModProperties_valueSelectionUi_label_propertyName">
+				<English>Current property</English>
+				<German>Aktuelle Einstellung</German>
+				<Hungarian>Current property</Hungarian>
+				<Italian>Current property</Italian>
+				<French>Current property</French>
+				<Russian>Current property</Russian>
+				<Polish>Current property</Polish>
+			</Key>
+			<Key ID="STR_X39_XLib_ModProperties_valueSelectionUi_label_value">
+				<English>Property selection</English>
+				<German>Wert Auswahl</German>
+				<Hungarian>Property selection</Hungarian>
+				<Italian>Property selection</Italian>
+				<French>Property selection</French>
+				<Russian>Property selection</Russian>
+				<Polish>Property selection</Polish>
+			</Key>
+			<Key ID="STR_X39_XLib_ModProperties_valueSelectionUi_label_title">
+				<English>Value editing UI</English>
+				<German>Wert Auswahl Oberfläche</German>
+				<Hungarian>Value editing UI</Hungarian>
+				<Italian>Value editing UI</Italian>
+				<French>Value editing UI</French>
+				<Russian>Value editing UI</Russian>
+				<Polish>Value editing UI</Polish>
+			</Key>
+		</Container>
+	<Container name="keySelectionUi">
+			<Key ID="STR_X39_XLib_ModProperties_keySelectionUi_btn_default">
+				<English>Reset to default</English>
+				<German>Zurücksetzen</German>
+				<Hungarian>Reset to default</Hungarian>
+				<Italian>Reset to default</Italian>
+				<French>Reset to default</French>
+				<Russian>Reset to default</Russian>
+				<Polish>Reset to default</Polish>
+			</Key>
+			<Key ID="STR_X39_XLib_ModProperties_keySelectionUi_label_title">
+				<English>Key selection dialog</English>
+				<German>Keyboard Einstellungs Dialog</German>
+				<Hungarian>Key selection dialog</Hungarian>
+				<Italian>Key selection dialog</Italian>
+				<French>Key selection dialog</French>
+				<Russian>Key selection dialog</Russian>
+				<Polish>Key selection dialog</Polish>
+			</Key>
+			<Key ID="STR_X39_XLib_ModProperties_keySelectionUi_label_keySelection">
+				<English>Key</English>
+				<German>Taste</German>
+				<Hungarian>Key</Hungarian>
+				<Italian>Key</Italian>
+				<French>Key</French>
+				<Russian>Key</Russian>
+				<Polish>Key</Polish>
+			</Key>
+			<Key ID="STR_X39_XLib_ModProperties_keySelectionUi_label_propertyName">
+				<English>Current property</English>
+				<German>Aktuelle Einstellung</German>
+				<Hungarian>Current property</Hungarian>
+				<Italian>Current property</Italian>
+				<French>Current property</French>
+				<Russian>Current property</Russian>
+				<Polish>Current property</Polish>
+			</Key>
+			<Key ID="STR_X39_XLib_ModProperties_keySelectionUi_btn_setAlt">
+				<English>ALT</English>
+				<German>ALT</German>
+				<Hungarian>ALT</Hungarian>
+				<Italian>ALT</Italian>
+				<French>ALT</French>
+				<Russian>ALT</Russian>
+				<Polish>ALT</Polish>
+			</Key>
+			<Key ID="STR_X39_XLib_ModProperties_keySelectionUi_btn_setCtrl">
+				<English>CTRL</English>
+				<German>STRG</German>
+				<Hungarian>CTRL</Hungarian>
+				<Italian>CTRL</Italian>
+				<French>CTRL</French>
+				<Russian>CTRL</Russian>
+				<Polish>CTRL</Polish>
+			</Key>
+			<Key ID="STR_X39_XLib_ModProperties_keySelectionUi_btn_setShift">
+				<English>SHIFT</English>
+				<German>SHIFT</German>
+				<Hungarian>SHIFT</Hungarian>
+				<Italian>SHIFT</Italian>
+				<French>SHIFT</French>
+				<Russian>SHIFT</Russian>
+				<Polish>SHIFT</Polish>
+			</Key>
+			<Key ID="STR_X39_XLib_ModProperties_keySelectionUi_label_currentButton">
+				<English>selected key</English>
+				<German>ausgewählte Taste</German>
+				<Hungarian>selected key</Hungarian>
+				<Italian>selected key</Italian>
+				<French>selected key</French>
+				<Russian>selected key</Russian>
+				<Polish>selected key</Polish>
+			</Key>
+			<Key ID="STR_X39_XLib_ModProperties_keySelectionUi_label_currentButtonNumeric">
+				<English>selected key (numeric)</English>
+				<German>ausgewählte Taste (wert)</German>
+				<Hungarian>selected key (numeric)</Hungarian>
+				<Italian>selected key (numeric)</Italian>
+				<French>selected key (numeric)</French>
+				<Russian>selected key (numeric)</Russian>
+				<Polish>selected key (numeric)</Polish>
+			</Key>
+		</Container>
+	</Package>
+</Project>

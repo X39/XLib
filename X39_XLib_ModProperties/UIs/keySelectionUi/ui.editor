@@ -1,0 +1,19 @@
+$[
+	1.063,
+	["XLib_KeySelection",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,1,0],
+	[2200,"",[1,"",["0.29375 * safezoneW + safezoneX","0.384 * safezoneH + safezoneY","0.4125 * safezoneW","0.27 * safezoneH"],[-1,-1,-1,-1],[0,0,0,0.4],[-1,-1,-1,-1],"","-1"],[]],
+	[1000,"label_title",[1,"label_title",["0.29375 * safezoneW + safezoneX","0.357 * safezoneH + safezoneY","0.4125 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[1,1,1,1],[-1,-1,-1,-1],"","-1"],[]],
+	[1002,"label_keySelection",[1,"label_keySelection",["0.298906 * safezoneW + safezoneX","0.489 * safezoneH + safezoneY","0.402187 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[1,1,1,1],[-1,-1,-1,-1],"","-1"],[]],
+	[1003,"label_propertyName",[1,"label_propertyName",["0.298906 * safezoneW + safezoneX","0.401 * safezoneH + safezoneY","0.402187 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[1,1,1,1],[-1,-1,-1,-1],"","-1"],[]],
+	[1001,"label_propertyNameDisplay",[1,"label_propertyNameDisplay",["0.298906 * safezoneW + safezoneX","0.434 * safezoneH + safezoneY","0.402187 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1600,"btn_setAlt",[1,"ALT",["0.438125 * safezoneW + safezoneX","0.522 * safezoneH + safezoneY","0.12375 * safezoneW","0.044 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1601,"btn_setCtrl",[1,"CTRL",["0.298906 * safezoneW + safezoneX","0.522 * safezoneH + safezoneY","0.12375 * safezoneW","0.044 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1602,"btn_setShift",[1,"SHIFT",["0.577344 * safezoneW + safezoneX","0.522 * safezoneH + safezoneY","0.12375 * safezoneW","0.044 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1004,"label_currentButton",[1,"label_currentButton",["0.298906 * safezoneW + safezoneX","0.577 * safezoneH + safezoneY","0.195937 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[1,1,1,1],[-1,-1,-1,-1],"","-1"],[]],
+	[1005,"label_currentButtonDisplay",[1,"label_currentButtonDisplay",["0.298906 * safezoneW + safezoneX","0.61 * safezoneH + safezoneY","0.195937 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1006,"label_currentButtonNumeric",[1,"label_currentButtonNumeric",["0.505157 * safezoneW + safezoneX","0.577 * safezoneH + safezoneY","0.195937 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[1,1,1,1],[-1,-1,-1,-1],"","-1"],[]],
+	[1007,"label_currentButtonNumericDisplay",[1,"label_currentButtonNumericDisplay",["0.505157 * safezoneW + safezoneX","0.61 * safezoneH + safezoneY","0.195937 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[2600,"",[1,"",["0.29375 * safezoneW + safezoneX","0.66 * safezoneH + safezoneY","0.201094 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[2700,"",[1,"",["0.613437 * safezoneW + safezoneX","0.66 * safezoneH + safezoneY","0.0928125 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[2400,"btn_default",[1,"",["0.510312 * safezoneW + safezoneX","0.66 * safezoneH + safezoneY","0.0928125 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
