@@ -36,7 +36,6 @@
 	#define ENDREGION()
 	
 	#define COMMA ,
-	#define return
 	
 	//#ifndef DEBUG
 	//	#define DEBUG

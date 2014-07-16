@@ -58,4 +58,5 @@ class CfgVehicles
 //#include "X39_XLib_PlaceSyncedUnits.cpp"
 #include "X39_XLib_Resupply.cpp"
 #include "X39_XLib_AmmoCaches.cpp"
+//#include "X39_XLib_IEDPlacement.cpp"
 };

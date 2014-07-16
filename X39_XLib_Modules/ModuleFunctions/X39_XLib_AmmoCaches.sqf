@@ -5,6 +5,7 @@ if(!isServer) exitWith {};
 _this spawn {
 	_logic = _this select 0;
 	_mapSize = _logic getVariable ["overrideMapSize", -1];
+	X39_XLib_Modules_var_X39_XLib_AmmoCaches_EndMission = _logic getVariable ["EndMission", ""];
 	_intelRate = [] call compile (_logic getVariable ["IntelRate", 1]);
 	if(_intelRate > 1) exitWith {["_intelRate needs to be < 1!"] call BIS_fnc_halt;};
 	_intelRate = 100 * _intelRate;

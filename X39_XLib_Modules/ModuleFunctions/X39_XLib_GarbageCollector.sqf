@@ -9,7 +9,7 @@ _res = (_this select 0) spawn {
 	_deadUnits = [];
 	_droppedItems = [];
 	_keepGroups = [];
-	if(!isNull X39_GM_Insurgency_var_globalGroup) then
+	if(!isNil "X39_GM_Insurgency_var_globalGroup") then
 	{
 		_keepGroups set[count _keepGroups, X39_GM_Insurgency_var_globalGroup];
 	};

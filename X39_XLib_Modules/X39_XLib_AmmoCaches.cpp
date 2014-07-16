@@ -60,6 +60,25 @@ class X39_XLib_AmmoCaches: Module_F
 			typeName = "STRING";
 			defaultValue = 0.75;
 		};
+		class EndMission
+		{
+			displayName = "EndMission Type";
+			description = "Which end mission type shall be used";
+			typeName = "STRING";
+			class values : ArgumentsBaseUnits
+			{
+				class opt_1	{name = "Do not end mission"; value = ""; default = 1;};
+				class opt_2	{name = "CONTINUE"; value = "CONTINUE"; default = 0;};
+				class opt_3	{name = "KILLED"; value = "KILLED"; default = 0;};
+				class opt_4	{name = "LOSER"; value = "LOSER"; default = 0;};
+				class opt_5	{name = "END1"; value = "END1"; default = 0;};
+				class opt_6	{name = "END2"; value = "END2"; default = 0;};
+				class opt_7	{name = "END3"; value = "END3"; default = 0;};
+				class opt_8	{name = "END4"; value = "END4"; default = 0;};
+				class opt_9	{name = "END5"; value = "END5"; default = 0;};
+				class opt_10{name = "END6"; value = "END6"; default = 0;};
+			};
+		};
 	};
 	class ModuleDescription: ModuleDescription
 	{
