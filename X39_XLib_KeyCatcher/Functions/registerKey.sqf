@@ -19,6 +19,10 @@ _executionCode =	[_this, 4, {hint "Key has no code bound to it";}, [{}]] call BI
 _variable =			[_this, 5, "X39_XLib_var_nilVariable", [""]] call BIS_fnc_param;
 
 if(_keyCode == 0x01) exitWith {["0x01 keyCode represents the ESC key which is forbidden to use as default! Please choose a different one."] call BIS_fnc_halt;};
+if(isNil "X39_XLib_var_Keys") then
+{
+	X39_XLib_var_Keys = [];
+};
 _keyID = count X39_XLib_var_Keys;
 X39_XLib_var_Keys set[_keyID, [_variable, _executionCode, [_keyCode, _shift, _ctrl, _alt]]];
 _keyID

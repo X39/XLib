@@ -2,7 +2,7 @@
 
 class X39_XLib_ActionDialog
 {
-	idd = 29325;
+	idd = 26983;
 	onLoad = "uiNamespace setVariable['X39_XLib_ActionDialog', _this select 0]";
 	onUnload = "uiNamespace setVariable['X39_XLib_ActionDialog', nil]";
 	

@@ -12,6 +12,7 @@
  *								- X39_XLib_var_ActionDialog_Executor
  *								- X39_XLib_var_ActionDialog_IsSelf
  *								- X39_XLib_var_ActionDialog_ExecutorInVehicle
+ *								- X39_XLib_var_ActionDialog_preventMenuOpening
  *	@Param5 - SCALAR		- parent action ID (use this to add subactions or leave blank if not needed)
  *	@Return - SCALAR		- ActionID (in case of a subAction it wil return the parents action ID)
  */
@@ -33,7 +34,10 @@ if(ISCODE(_buttonAction)) then
 	_arr = _arr - [-1];
 	_buttonAction = toString _arr;
 };
-
+if(isNil "X39_XLib_var_ActionDialog_Actions") then
+{
+	X39_XLib_var_ActionDialog_Actions = [];
+};
 if(_parentID < 0) then
 {
 	_returnID = count X39_XLib_var_ActionDialog_Actions;

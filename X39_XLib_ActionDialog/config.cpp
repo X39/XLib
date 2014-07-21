@@ -21,6 +21,7 @@ class CfgFunctions{
 		class X39_XLib_ActionDialog{
 			class ActionDialog_init:X39_XLib_Function_TypeB {file = "\X39_XLib_ActionDialog\Functions\init.sqf";};
 			class ActionDialog_createDialog:X39_XLib_Function_TypeA {file = "\X39_XLib_ActionDialog\Functions\createDialog.sqf";};
+			class ActionDialog_closeDialog:X39_XLib_Function_TypeA {file = "\X39_XLib_ActionDialog\Functions\closeDialog.sqf";};
 			class ActionDialog_registerAction:X39_XLib_Function_TypeA {file = "\X39_XLib_ActionDialog\Functions\registerAction.sqf";};
 			class ActionDialog_initSystemVariables:X39_XLib_Function_TypeA {file = "\X39_XLib_ActionDialog\Functions\initSystemVariables.sqf";};
 			class ActionDialog_initActions:X39_XLib_Function_TypeA {file = "\X39_XLib_ActionDialog\Functions\initActions.sqf";};

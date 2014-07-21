@@ -11,7 +11,6 @@ if(hasInterface) then
 {
 	_res = [] spawn {
 		DEBUG_CODE_SC(_fnc_scriptName = "X39_XLib_fnc_ActionDialog_init")
-		X39_XLib_var_Keys = [];
 		if(isNil "X39_XLib_var_KeyHandler") then
 		{
 			waitUntil{!isNull (findDisplay 46)}; 
