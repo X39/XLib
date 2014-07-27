@@ -18,20 +18,24 @@ class CfgFunctions
 	{
 		class ModuleFunctions
 		{
-			class X39_XLib_GarbageCollector:X39_XLib_Function_TypeA			{file = "\X39_XLib_Modules\ModuleFunctions\X39_XLib_GarbageCollector.sqf";};
-			class X39_XLib_PlaceSyncedUnits:X39_XLib_Function_TypeA			{file = "\X39_XLib_Modules\ModuleFunctions\X39_XLib_PlaceSyncedUnits.sqf";};
-			class X39_XLib_Resupply:X39_XLib_Function_TypeA					{file = "\X39_XLib_Modules\ModuleFunctions\X39_XLib_Resupply.sqf";};
-			class X39_XLib_AmmoCaches:X39_XLib_Function_TypeA				{file = "\X39_XLib_Modules\ModuleFunctions\X39_XLib_AmmoCaches.sqf";};
+			class X39_XLib_GarbageCollector:X39_XLib_Function_TypeA					{file = "\X39_XLib_Modules\ModuleFunctions\X39_XLib_GarbageCollector.sqf";};
+			class X39_XLib_PlaceSyncedUnits:X39_XLib_Function_TypeA					{file = "\X39_XLib_Modules\ModuleFunctions\X39_XLib_PlaceSyncedUnits.sqf";};
+			class X39_XLib_Resupply:X39_XLib_Function_TypeA							{file = "\X39_XLib_Modules\ModuleFunctions\X39_XLib_Resupply.sqf";};
+			class X39_XLib_AmmoCaches:X39_XLib_Function_TypeA						{file = "\X39_XLib_Modules\ModuleFunctions\X39_XLib_AmmoCaches.sqf";};
+		};
+		class ZeusModuleFunctions
+		{
+			class X39_XLib_Zeus_disableAi:X39_XLib_Function_TypeA						{file = "\X39_XLib_Modules\ModuleFunctions\X39_XLib_Zeus_disableAi.sqf";};
 		};
 		class X39_XLib_Resupply
 		{
-			class Helper_vehicleChat:X39_XLib_Function_TypeA			{file = "\X39_XLib_Modules\Functions\X39_XLib_Resupply\Helper_vehicleChat.sqf";};
-			class Helper_execCode:X39_XLib_Function_TypeA				{file = "\X39_XLib_Modules\Functions\X39_XLib_Resupply\Helper_execCode.sqf";};
+			class Helper_vehicleChat:X39_XLib_Function_TypeA						{file = "\X39_XLib_Modules\Functions\X39_XLib_Resupply\Helper_vehicleChat.sqf";};
+			class Helper_execCode:X39_XLib_Function_TypeA							{file = "\X39_XLib_Modules\Functions\X39_XLib_Resupply\Helper_execCode.sqf";};
 		};
 		class X39_XLib_AmmoCaches
 		{
-			class X39_XLib_AmmoCaches_initIntelObject:X39_XLib_Function_TypeA				{file = "\X39_XLib_Modules\Functions\X39_XLib_AmmoCaches\initIntelObject.sqf";};
-			class X39_XLib_AmmoCaches_boxDestroyed:X39_XLib_Function_TypeA					{file = "\X39_XLib_Modules\Functions\X39_XLib_AmmoCaches\boxDestroyed.sqf";};
+			class X39_XLib_AmmoCaches_initIntelObject:X39_XLib_Function_TypeA		{file = "\X39_XLib_Modules\Functions\X39_XLib_AmmoCaches\initIntelObject.sqf";};
+			class X39_XLib_AmmoCaches_boxDestroyed:X39_XLib_Function_TypeA			{file = "\X39_XLib_Modules\Functions\X39_XLib_AmmoCaches\boxDestroyed.sqf";};
 		};
 	};
 };
@@ -58,5 +62,6 @@ class CfgVehicles
 //#include "X39_XLib_PlaceSyncedUnits.cpp"
 #include "X39_XLib_Resupply.cpp"
 #include "X39_XLib_AmmoCaches.cpp"
+//#include "X39_XLib_Zeus_disableAi.cpp"
 //#include "X39_XLib_IEDPlacement.cpp"
 };

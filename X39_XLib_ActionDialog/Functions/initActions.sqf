@@ -41,11 +41,11 @@ _this spawn {
 					adDisplayCtrl(_idcs_InnerMenu select (count _assignedActions)) ctrlSetText (_x select 0);
 					if(count (_x select 4) == 0) then
 					{
-						adDisplayCtrl(_idcs_InnerMenu select (count _assignedActions)) buttonSetAction ((_x select 2) call X39_XLib_fnc_convertCodeToString);
+						adDisplayCtrl((_idcs_InnerMenu select (count _assignedActions))) ctrlSetEventHandler["MouseButtonClick", ((_x select 2) call X39_XLib_fnc_convertCodeToString)];
 					}
 					else
 					{
-						adDisplayCtrl(_idcs_InnerMenu select (count _assignedActions)) buttonSetAction format["[%1, %2] spawn X39_XLib_fnc_ActionDialog_initSubactionEntries", _forEachIndex, count _assignedActions / (count _idcs_InnerMenu) < 0.5];
+						adDisplayCtrl((_idcs_InnerMenu select (count _assignedActions))) ctrlSetEventHandler["MouseButtonClick", format["[%1, %2] spawn X39_XLib_fnc_ActionDialog_initSubactionEntries", _forEachIndex, count _assignedActions / (count _idcs_InnerMenu) < 0.5]];
 					};
 					_assignedActions set [count _assignedActions, _forEachIndex];
 				};
