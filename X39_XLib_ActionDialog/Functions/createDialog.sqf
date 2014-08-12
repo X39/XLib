@@ -7,7 +7,8 @@
  */
 //https://community.bistudio.com/wiki/ctrlCommit
 //https://community.bistudio.com/wiki/ctrlSetPosition
-if (dialog) exitWith{PRINT_ERROR("Another UI is already displayed!");};
+
+if (dialog) exitWith{[] call X39_XLib_fnc_ActionDialog_closeDialog; PRINT_ERROR("Another UI is already displayed!");};
 
 createDialog "X39_XLib_ActionDialog";
 
