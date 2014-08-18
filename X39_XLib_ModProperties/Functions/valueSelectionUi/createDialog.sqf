@@ -37,7 +37,7 @@ diagCtrl(IDC_XLIB_VALUESELECTION_RSCBUTTONMENUOK_2600) buttonSetAction format["[
 		[X39_XLib_var_ModProperties_variableName, _val] call X39_XLib_var_ModProperties_setFunction;
 		(uiNamespace getVariable 'X39_XLib_ui_valueSelection') closeDisplay 1;
 	}];
-diagCtrl(IDC_XLIB_VALUESELECTION_RSCBUTTONMENUCANCEL_2700) buttonSetAction "(uiNamespace getVariable 'X39_XLib_ui_valueSelection') closeDisplay 2;";
+diagCtrl(IDC_XLIB_VALUESELECTION_RSCBUTTONMENUCANCEL_2700) ctrlSetEventHandler ["ButtonClick", "(uiNamespace getVariable 'X39_XLib_ui_valueSelection') closeDisplay 2;"];
 diagCtrl(IDC_XLIB_VALUESELECTION_BTN_DEFAULT) buttonSetAction format["[] call %1", {
 		_val = ((X39_XLib_var_ModProperties_PropertyConfig >> 'default') call BIS_fnc_getCfgData);
 		if(typeName _val == "ARRAY") then

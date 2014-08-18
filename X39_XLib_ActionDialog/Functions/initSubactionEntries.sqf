@@ -62,12 +62,12 @@ _index = _idcs select 0;
 adDisplayCtrl(_index) ctrlShow true;
 adDisplayCtrl(_index) ctrlEnable false;
 adDisplayCtrl(_index) ctrlSetText "/\";
-buttonSetAction [_index, (str formatText["_res = [%1, %2] spawn X39_XLib_fnc_ActionDialog_subActionListUpDown;", true, _isLeftSide])];
+adDisplayCtrl(_index) ctrlSetEventHandler ["ButtonClick", (str formatText["_res = [%1, %2] spawn X39_XLib_fnc_ActionDialog_subActionListUpDown;", true, _isLeftSide])];
 _index = _idcs select ((count _idcs) - 1);
 adDisplayCtrl(_index) ctrlShow true;
 adDisplayCtrl(_index) ctrlEnable true;
 adDisplayCtrl(_index) ctrlSetText "\/";
-buttonSetAction [_index, (str formatText["_res = [%1, %2] spawn X39_XLib_fnc_ActionDialog_subActionListUpDown;", false, _isLeftSide])];
+adDisplayCtrl(_index) ctrlSetEventHandler ["ButtonClick", (str formatText["_res = [%1, %2] spawn X39_XLib_fnc_ActionDialog_subActionListUpDown;", false, _isLeftSide])];
 _subActionList_maxRuns = 3;
 _validSubactions = {([] call (_x select 3))} count _subActions;
 if(_validSubactions < 3) then

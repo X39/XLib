@@ -76,7 +76,7 @@ if(_subActionList_maxRuns > 0) then
 			adDisplayCtrl(_index) ctrlShow true;
 			adDisplayCtrl(_index) ctrlEnable true;
 			adDisplayCtrl(_index) ctrlSetText (_currentSelection select 0);
-			adDisplayCtrl(_index) buttonSetAction ((_currentSelection select 2) call X39_XLib_fnc_convertCodeToString);
+			adDisplayCtrl(_index) ctrlSetEventHandler ["ButtonClick", ((_currentSelection select 2) call X39_XLib_fnc_convertCodeToString)];
 		}
 		else
 		{

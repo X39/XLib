@@ -40,26 +40,28 @@ class X39_XLib_Function_TypeD{
 class CfgFunctions{
 	class X39_XLib {
 		class X39_Core{
-			class init:X39_XLib_Function_TypeD{file = "\X39_XLib_Core\XLib\Functions\init.sqf";};
+			class init:X39_XLib_Function_TypeD							{file = "\X39_XLib_Core\XLib\Functions\init.sqf";};
 			
-			class gcDo:X39_XLib_Function_TypeA{file = "\X39_XLib_Core\XLib\Functions\doGarbageCollector.sqf";};
+			class gcDo:X39_XLib_Function_TypeA							{file = "\X39_XLib_Core\XLib\Functions\doGarbageCollector.sqf";};
 			
 			//map operations
-			class getMapSize:X39_XLib_Function_TypeA				{file = "\X39_XLib_Core\XLib\Functions\mapOperations\getMapSize.sqf";};
-			class getAllHousesOnMap:X39_XLib_Function_TypeA			{file = "\X39_XLib_Core\XLib\Functions\mapOperations\getAllHousesOnMap.sqf";};
-			class getAllHousesOnMapPerGrid:X39_XLib_Function_TypeA	{file = "\X39_XLib_Core\XLib\Functions\mapOperations\getAllHousesOnMapPerGrid.sqf";};
+			class getMapSize:X39_XLib_Function_TypeA					{file = "\X39_XLib_Core\XLib\Functions\mapOperations\getMapSize.sqf";};
+			class getAllHousesOnMap:X39_XLib_Function_TypeA				{file = "\X39_XLib_Core\XLib\Functions\mapOperations\getAllHousesOnMap.sqf";};
+			class getAllHousesOnMapPerGrid:X39_XLib_Function_TypeA		{file = "\X39_XLib_Core\XLib\Functions\mapOperations\getAllHousesOnMapPerGrid.sqf";};
 			
-			class getUnitsBearing:X39_XLib_Function_TypeA			{file = "\X39_XLib_Core\XLib\Functions\getUnitsBearing.sqf";};
-			class intToBool:X39_XLib_Function_TypeA					{file = "\X39_XLib_Core\XLib\Functions\intToBool.sqf";};
+			class getUnitsBearing:X39_XLib_Function_TypeA				{file = "\X39_XLib_Core\XLib\Functions\getUnitsBearing.sqf";};
+			class intToBool:X39_XLib_Function_TypeA						{file = "\X39_XLib_Core\XLib\Functions\intToBool.sqf";};
 			
-			class isUnitInShelter:X39_XLib_Function_TypeA			{file = "\X39_XLib_Core\XLib\Functions\isUnitInShelter.sqf";};
-			class isUnitInOpenArea:X39_XLib_Function_TypeA			{file = "\X39_XLib_Core\XLib\Functions\isUnitInOpenArea.sqf";};
-			class dikCodeToChar:X39_XLib_Function_TypeA				{file = "\X39_XLib_Core\XLib\Functions\dikCodeToChar.sqf";};
-			class convertCodeToString:X39_XLib_Function_TypeA		{file = "\X39_XLib_Core\XLib\Functions\convertCodeToString.sqf";};
+			class isUnitInShelter:X39_XLib_Function_TypeA				{file = "\X39_XLib_Core\XLib\Functions\isUnitInShelter.sqf";};
+			class isUnitInOpenArea:X39_XLib_Function_TypeA				{file = "\X39_XLib_Core\XLib\Functions\isUnitInOpenArea.sqf";};
+			class dikCodeToChar:X39_XLib_Function_TypeA					{file = "\X39_XLib_Core\XLib\Functions\dikCodeToChar.sqf";};
+			class convertCodeToString:X39_XLib_Function_TypeA			{file = "\X39_XLib_Core\XLib\Functions\convertCodeToString.sqf";};
+			
+			class damageTypeFromProjectile:X39_XLib_Function_TypeA		{file = "\X39_XLib_Core\XLib\Functions\damageTypeFromProjectile.sqf";};
 		};
 		class X39_ActionTracker{
-			class runActionTracker:X39_XLib_Function_TypeA			{file = "\X39_XLib_Core\XLib\Functions\actionTracker\Init.sqf";};
-			class registerAction:X39_XLib_Function_TypeA			{file = "\X39_XLib_Core\XLib\Functions\actionTracker\registerAction.sqf";};
+			class runActionTracker:X39_XLib_Function_TypeA				{file = "\X39_XLib_Core\XLib\Functions\actionTracker\Init.sqf";};
+			class registerAction:X39_XLib_Function_TypeA				{file = "\X39_XLib_Core\XLib\Functions\actionTracker\registerAction.sqf";};
 		};
 	};
 };
