@@ -7,9 +7,9 @@
  
  
 class XLib_MessageUi {
-	idd = 26385;
-	onLoad = "uiNamespace setVariable['X39_MS2_UnitSelectionUi', _this select 0];";
-	onUnload = "uiNamespace setVariable['X39_MS2_UnitSelectionUi', displayNull];";
+	idd = 25385;
+	onLoad = "uiNamespace setVariable['XLib_MessageUi', _this select 0];";
+	onUnload = "uiNamespace setVariable['XLib_MessageUi', displayNull];";
 	duration = 32000;
 	fadeIn = 0;
 	fadeOut = 0;
