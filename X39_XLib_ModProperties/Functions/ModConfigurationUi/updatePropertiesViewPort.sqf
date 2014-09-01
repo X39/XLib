@@ -26,17 +26,17 @@ for "_i" from 0 to ((count X39_XLib_var_ModProperties_CurrentSelectedConfig) - 1
 		}
 		else
 		{
-			_default = format["%1", (_currentClass >> "default") call BIS_fnc_getCfgData];
+			_default = (_currentClass >> "default") call BIS_fnc_getCfgData;
 			if(typeName _default == "ARRAY") then
 			{
 				if(count _default > 0) then
 				{
-					_value = format["%1", (((_currentClass >> "values") select (_default select 0)) >> "value") call BIS_fnc_getCfgData];
+					_value = format["%1", (((_currentClass >> "values") select (_default select 0)) >> "displayShort") call BIS_fnc_getCfgData];
 				};
 			}
 			else
 			{
-				_value = format["%1", (((_currentClass >> "values") select _default) >> "value") call BIS_fnc_getCfgData];
+				_value = format["%1", (((_currentClass >> "values") select _default) >> "displayShort") call BIS_fnc_getCfgData];
 			};
 		};
 	};
