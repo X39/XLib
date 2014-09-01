@@ -31,12 +31,12 @@ for "_i" from 0 to ((count X39_XLib_var_ModProperties_CurrentSelectedConfig) - 1
 			{
 				if(count _default > 0) then
 				{
-					_value = format["%1", (((_currentClass >> "values") select (_default select 0)) >> "displayShort") call BIS_fnc_getCfgData];
+					_value = format["%1", (((_currentClass >> "values") select (_default select 0)) >> "value") call BIS_fnc_getCfgData];
 				};
 			}
 			else
 			{
-				_value = format["%1", (((_currentClass >> "values") select _default) >> "displayShort") call BIS_fnc_getCfgData];
+				_value = format["%1", (((_currentClass >> "values") select _default) >> "value") call BIS_fnc_getCfgData];
 			};
 		};
 	};
@@ -48,6 +48,10 @@ for "_i" from 0 to ((count X39_XLib_var_ModProperties_CurrentSelectedConfig) - 1
 		if(_value select 2) then { _txt = format["CTRL + %1", _txt]; };
 		if(_value select 3) then { _txt = format["ALT + %1", _txt]; };
 		_value = _txt;
+	};
+	if(_type == 3) then
+	{
+		_value = format["%1", (((_currentClass >> "values") select _value) >> "displayShort") call BIS_fnc_getCfgData];
 	};
 	_index = diagCtrl(IDC_XLIB_MODCONFIGURATION_MCLB_CONFIGURATION) lnbAddRow ["", getText (_currentClass >> "display"), format["%1", _value]];
 	diagCtrl(IDC_XLIB_MODCONFIGURATION_MCLB_CONFIGURATION) lnbSetPicture [[_index, 0], getText (_currentClass >> "image")];
