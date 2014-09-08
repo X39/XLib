@@ -38,7 +38,7 @@
 	#define SINGLEQUOTATIONMARK '
 	
 	#ifndef DEBUG
-//		#define DEBUG
+		#define DEBUG
 	#endif
 	
 	#define getFnc(PARTA, PARTB) PARTA##PARTB
@@ -80,5 +80,5 @@
 	DEBUG_LOG(format["%3: %1 call %2" COMMA _this COMMA _fnc_scriptName COMMA diag_tickTime]);
 	
 	#define REQUESTSYSTEM_TIMEOUT 60
-	#define return
+	
 //#endif

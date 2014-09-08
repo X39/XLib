@@ -1,3 +1,4 @@
+#include "\X39_XLib_ModProperties\default.hpp"
 #include "\X39_XLib_ModProperties\UIs\ModConfigurationUi\ui.defs"
 #include "\X39_XLib_ModProperties\UIs\valueSelectionUi\ui.defs"
 

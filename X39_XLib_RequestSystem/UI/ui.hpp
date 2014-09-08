@@ -6,10 +6,10 @@
  
  
  
-class XLib_MessageUi {
-	idd = 25385;
-	onLoad = "uiNamespace setVariable['XLib_MessageUi', _this select 0];";
-	onUnload = "uiNamespace setVariable['XLib_MessageUi', displayNull];";
+class XLib_RequestSystem_Ui {
+	idd = IDC_XLIB_ADUI_IDD;
+	onLoad = "uiNamespace setVariable['XLib_RequestSystem_Ui', _this select 0];";
+	onUnload = "uiNamespace setVariable['XLib_RequestSystem_Ui', displayNull];";
 	duration = 32000;
 	fadeIn = 0;
 	fadeOut = 0;
@@ -24,6 +24,7 @@ class XLib_MessageUi {
 			y = 0.038 * safezoneH + safezoneY;
 			w = 0.20625 * safezoneW;
 			h = 0.132 * safezoneH;
+			shown = false;
 		};
 		class RscText_1000: RscText
 		{
@@ -83,7 +84,7 @@ class XLib_MessageUi {
 		class RscText_1003: RscText
 		{
 			idc = IDC_XLIB_ADUI_RSCTEXT_1003;
-			text = "Pending Requests: XXXXXXX"; //--- ToDo: Localize;
+			text = "Pending Requests: 1"; //--- ToDo: Localize;
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.014 * safezoneH + safezoneY;
 			w = 0.20625 * safezoneW;

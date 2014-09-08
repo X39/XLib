@@ -58,6 +58,7 @@ class CfgFunctions{
 			class convertCodeToString:X39_XLib_Function_TypeA			{file = "\X39_XLib_Core\XLib\Functions\convertCodeToString.sqf";};
 			
 			class damageTypeFromProjectile:X39_XLib_Function_TypeA		{file = "\X39_XLib_Core\XLib\Functions\damageTypeFromProjectile.sqf";};
+			class executeLocalToUnit:X39_XLib_Function_TypeA			{file = "\X39_XLib_Core\XLib\Functions\executeLocalToUnit.sqf";};
 		};
 		class X39_ActionTracker{
 			class runActionTracker:X39_XLib_Function_TypeA				{file = "\X39_XLib_Core\XLib\Functions\actionTracker\Init.sqf";};
