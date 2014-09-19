@@ -23,7 +23,7 @@ _this spawn {
 			];
 	_assignedActions = [];
 	while{!isNil {(uiNamespace getVariable "X39_XLib_ActionDialog")}} do
-	{//TODO: Take care about sub actions		
+	{
 		if(({([] call ((X39_XLib_var_ActionDialog_Actions select _x) select 3))} count _assignedActions) > 0) then
 		{
 			{

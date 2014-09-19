@@ -79,7 +79,7 @@ if(isDedicated) exitWith {};
 							}
 							else
 							{
-								if(_x distance (_insObj) >= X39_GM_Insurgency_var_spawnRange) then
+								if(_x distance (_insObj) >= X39_GM_Insurgency_var_maxDistanceToUnitGrid) then
 								{
 									DEBUG_CODE(diag_log format["InsurgencyWorker: Unit '%1' is out of InsurgencyObject range ..." COMMA _x])
 									_x call X39_GM_Insurgency_fnc_removeUnit;
@@ -87,7 +87,7 @@ if(isDedicated) exitWith {};
 									_obj = _insObj call X39_GM_Insurgency_fnc_createUnit;
 									if(isNull _obj) then
 									{
-										diag_log "InsurgencyWorker: Received NULL unit while respawning unit!";
+										DEBUG_CODE(diag_log "InsurgencyWorker: Received NULL unit while respawning unit!";)
 										X39_GM_Insurgency_var_SpawnedUnits set[_forEachIndex, -1];
 										_insObj call X39_GM_Insurgency_fnc_updateInsurgencyObject;
 									}
@@ -99,7 +99,7 @@ if(isDedicated) exitWith {};
 								}
 								else
 								{
-									if(_x distance player >= X39_GM_Insurgency_var_spawnRange * 2) then
+									if(_x distance player >= X39_GM_Insurgency_var_maxDistanceToOwner) then
 									{
 										DEBUG_CODE(diag_log format["InsurgencyWorker: Unit '%1' is out of player range, despawning" COMMA _x])
 										_x call X39_GM_Insurgency_fnc_removeUnit;

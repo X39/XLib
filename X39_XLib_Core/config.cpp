@@ -75,3 +75,12 @@ class CfgFactionClasses
 		side = 7;
 	};
 };
+
+class CfgWeapons {
+	class ItemCore;
+	class x39_itemcore: ItemCore {
+		type = 4;
+		simulation = "ItemMineDetector";
+		detectRange = -1;
+	};
+};

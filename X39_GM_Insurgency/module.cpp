@@ -59,12 +59,33 @@ class X39_GM_Insurgency_Module: Module_F
 			typeName = "NUMBER";
 			defaultValue = 200;
 		};
+		class maxDistanceToUnitGrid
+		{
+			displayName = "maxDistanceToUnitGrid";
+			description = "Sets the max distance an insurgency unit is allowed to walk away from its original grid before it gets despawned";
+			typeName = "NUMBER";
+			defaultValue = 200;
+		};
+		class maxDistanceToOwner
+		{
+			displayName = "maxDistanceToOwner";
+			description = "Sets the max distance an insurgency unit is allowed to walk away from its 'Owner' (the unit which triggered the spawn) before it gets despawned";
+			typeName = "NUMBER";
+			defaultValue = 400;
+		};
 		class deathTimeout
 		{
 			displayName = "RespawnTimeout";
 			description = "Time (in s) before units will be respawned inside of a square";
 			typeName = "NUMBER";
 			defaultValue = 60;
+		};
+		class minDistanceToPlayableUnitsForSpawn
+		{
+			displayName = "minDistanceToPlayableUnitsForSpawn";
+			description = "Minimal distance to any playable unit for a new unit";
+			typeName = "NUMBER";
+			defaultValue = 20;
 		};
 		class maxUnitsPerPlayer
 		{
