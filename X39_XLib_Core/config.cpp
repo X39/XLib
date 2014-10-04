@@ -51,6 +51,7 @@ class CfgFunctions{
 			
 			class getUnitsBearing:X39_XLib_Function_TypeA				{file = "\X39_XLib_Core\XLib\Functions\getUnitsBearing.sqf";};
 			class intToBool:X39_XLib_Function_TypeA						{file = "\X39_XLib_Core\XLib\Functions\intToBool.sqf";};
+			class scalarToBool:X39_XLib_Function_TypeA						{file = "\X39_XLib_Core\XLib\Functions\intToBool.sqf";};
 			
 			class isUnitInShelter:X39_XLib_Function_TypeA				{file = "\X39_XLib_Core\XLib\Functions\isUnitInShelter.sqf";};
 			class isUnitInOpenArea:X39_XLib_Function_TypeA				{file = "\X39_XLib_Core\XLib\Functions\isUnitInOpenArea.sqf";};

@@ -59,6 +59,13 @@ class X39_GM_Insurgency_Module: Module_F
 			typeName = "NUMBER";
 			defaultValue = 200;
 		};
+		class minDistanceToPlayableUnitsForSpawn
+		{
+			displayName = "MDTPUFS";
+			description = "Minimal distance to any playable unit for a new unit";
+			typeName = "NUMBER";
+			defaultValue = 20;
+		};
 		class maxDistanceToUnitGrid
 		{
 			displayName = "maxDistanceToUnitGrid";
@@ -79,13 +86,6 @@ class X39_GM_Insurgency_Module: Module_F
 			description = "Time (in s) before units will be respawned inside of a square";
 			typeName = "NUMBER";
 			defaultValue = 60;
-		};
-		class minDistanceToPlayableUnitsForSpawn
-		{
-			displayName = "minDistanceToPlayableUnitsForSpawn";
-			description = "Minimal distance to any playable unit for a new unit";
-			typeName = "NUMBER";
-			defaultValue = 20;
 		};
 		class maxUnitsPerPlayer
 		{

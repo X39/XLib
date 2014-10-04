@@ -28,6 +28,8 @@ while{str _buildingPos == "[0,0,0]"} do
 if(isNull X39_GM_Insurgency_var_globalGroup) then
 {
 	X39_GM_Insurgency_var_globalGroup = createGroup X39_GM_Insurgency_var_Side;
+	X39_GM_Insurgency_var_globalGroup setCombatMode "RED";
+	X39_GM_Insurgency_var_globalGroup setBehaviour "COMBAT";
 	publicVariable "X39_GM_Insurgency_var_globalGroup";
 };
 _group = X39_GM_Insurgency_var_globalGroup;
