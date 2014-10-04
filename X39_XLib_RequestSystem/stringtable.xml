@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA3">
+	<Package name="X39_XLib">
+		<Container name="RequestSystem">
+			<Key ID="X39_XLib_RequestSystem_PendingRequests">
+				<English>Pending requests: %1</English>
+				<German>Pending requests: %1</German>
+				<Hungarian>Pending requests: %1</Hungarian>
+				<Italian>Pending requests: %1</Italian>
+				<French>Pending requests: %1</French>
+				<Russian>Pending requests: %1</Russian>
+				<Polish>Pending requests: %1</Polish>
+			</Key>
+			<Key ID="X39_XLib_RequestSystem_RequestAccept">
+				<English>Yes [%1]</English>
+				<German>Yes [%1]</German>
+				<Hungarian>Yes [%1]</Hungarian>
+				<Italian>Yes [%1]</Italian>
+				<French>Yes [%1]</French>
+				<Russian>Yes [%1]</Russian>
+				<Polish>Yes [%1]</Polish>
+			</Key>
+			<Key ID="X39_XLib_RequestSystem_RequestDeny">
+				<English>No [%1]</English>
+				<German>No [%1]</German>
+				<Hungarian>No [%1]</Hungarian>
+				<Italian>No [%1]</Italian>
+				<French>No [%1]</French>
+				<Russian>No [%1]</Russian>
+				<Polish>No [%1]</Polish>
+			</Key>
+			<Key ID="X39_XLib_RequestSystem_KeyNotSet">
+				<English>NA</English>
+				<German>NA</German>
+				<Hungarian>NA</Hungarian>
+				<Italian>NA</Italian>
+				<French>NA</French>
+				<Russian>NA</Russian>
+				<Polish>NA</Polish>
+			</Key>
+		</Container>
+	</Package>
+</Project>

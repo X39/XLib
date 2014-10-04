@@ -1,0 +1,15 @@
+/* #Fipydo
+$[
+	1.063,
+	["XLib_ADUi",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[2202,"",[1,"",["0.396875 * safezoneW + safezoneX","0.038 * safezoneH + safezoneY","0.20625 * safezoneW","0.132 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1000,"RscText_1000",[1,"Are you sure you want that?",["0.402031 * safezoneW + safezoneX","0.049 * safezoneH + safezoneY","0.195937 * safezoneW","0.11 * safezoneH"],[1,1,1,1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","1.2"],[]],
+	[2200,"",[1,"",["0.396875 * safezoneW + safezoneX","0.173 * safezoneH + safezoneY","0.102125 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[2201,"",[1,"",["0.501 * safezoneW + safezoneX","0.173 * safezoneH + safezoneY","0.102125 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1001,"",[1,"Yes [X]",["0.396875 * safezoneW + safezoneX","0.173 * safezoneH + safezoneY","0.102125 * safezoneW","0.022 * safezoneH"],[0,1,0,1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1002,"",[1,"No [CTRL+X]",["0.501 * safezoneW + safezoneX","0.173 * safezoneH + safezoneY","0.102125 * safezoneW","0.022 * safezoneH"],[1,0,0,1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[2203,"",[1,"",["0.396875 * safezoneW + safezoneX","0.014 * safezoneH + safezoneY","0.20625 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[-1003,"",[1,"Pending Requests: XXXXXXX",["0.396875 * safezoneW + safezoneX","0.014 * safezoneH + safezoneY","0.20625 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/
+

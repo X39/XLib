@@ -28,6 +28,8 @@ while{str _buildingPos == "[0,0,0]"} do
 if(isNull X39_GM_Insurgency_var_globalGroup) then
 {
 	X39_GM_Insurgency_var_globalGroup = createGroup X39_GM_Insurgency_var_Side;
+	X39_GM_Insurgency_var_globalGroup setCombatMode "RED";
+	X39_GM_Insurgency_var_globalGroup setBehaviour "COMBAT";
 	publicVariable "X39_GM_Insurgency_var_globalGroup";
 };
 _group = X39_GM_Insurgency_var_globalGroup;
@@ -35,7 +37,7 @@ _group = X39_GM_Insurgency_var_globalGroup;
 //TODO: change position finding of units
 if(isNil "_class" || {isNil "_house"}) exitWith {return objNull};
 DEBUG_CODE(diag_log format["Trying to create unit: '%1 createUnit %2'" COMMA _group COMMA [_class COMMA _buildingPos COMMA [] COMMA 5 COMMA "NONE"]])
-
+if({(_x distance _buildingPos < X39_GM_Insurgency_var_minDistanceToPlayableUnitsForSpawn)}count playableUnits > 0) exitWith {objNull};
 _unit = _group createUnit [_class, _buildingPos, [], 5, "NONE"];
 _pos = position _unit;
 if(_pos select 2 < 1) then

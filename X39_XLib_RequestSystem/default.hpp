@@ -38,7 +38,7 @@
 	#define SINGLEQUOTATIONMARK '
 	
 	#ifndef DEBUG
-//		#define DEBUG
+		#define DEBUG
 	#endif
 	
 	#define getFnc(PARTA, PARTB) PARTA##PARTB
@@ -77,12 +77,8 @@
 	#endif
 	#define assignValue3(NAM,VAL,NAMESPACE) DEBUG_LOG_SC(SINGLEQUOTATIONMARK defining variable NAM with value VAL SINGLEQUOTATIONMARK) if(isNil {NAMESPACE getVariable NAM}) then { NAMESPACE setVariable [NAM, VAL]; } else { PRINT_WARNING(format["%1 is already set, JIP player?" COMMA VAL]); }
 	#define assignValue(NAM,VAL) assignValue3(NAM,VAL,missionNamespace)
-	#ifdef ALTERNATIVEDEBUGOUTPUT
-		DEBUG_LOG(str [diag_tickTime COMMA _this COMMA _fnc_scriptName]);
-	#else
-		DEBUG_LOG(format["%3: %1 call %2" COMMA _this COMMA _fnc_scriptName COMMA diag_tickTime]);
-	#endif
-
+	DEBUG_LOG(format["%3: %1 call %2" COMMA _this COMMA _fnc_scriptName COMMA diag_tickTime]);
+	
 	#define REQUESTSYSTEM_TIMEOUT 60
-	#define return
+	
 //#endif

@@ -1,5 +1,5 @@
 #include "\X39_GM_Insurgency\default.hpp"
-private["_logic", "_houses", "_pos", "_overrideMapSize", "_minSpawnPositionsForBuildings", "_enemiesSide", "_typeOfX", "_avoidAreas", "_arr", "_maxUnitsPerPlayer", "_maxUnitsPerSquare", "_deathTimeout"];
+private["_logic", "_houses", "_pos", "_overrideMapSize", "_minSpawnPositionsForBuildings", "_enemiesSide", "_typeOfX", "_avoidAreas", "_arr", "_maxUnitsPerPlayer", "_maxUnitsPerSquare", "_deathTimeout", "_minDistanceToPlayableUnitsForSpawn", "_maxDistanceToUnitGrid", "_maxDistanceToOwner"];
 _logic = _this select 0;
 
 _overrideMapSize = _logic getVariable ["overrideMapSize", 0];
@@ -13,6 +13,9 @@ _maxUnitsPerPlayer = _logic getVariable "maxUnitsPerPlayer";
 _maxUnitsPerSquare = _logic getVariable "maxUnitsPerSquare";
 _spawnrange = _logic getVariable "spawnrange";
 _deathTimeout = _logic getVariable "deathTimeout";
+_minDistanceToPlayableUnitsForSpawn = _logic getVariable "minDistanceToPlayableUnitsForSpawn";
+_maxDistanceToUnitGrid = _logic getVariable "maxDistanceToUnitGrid";
+_maxDistanceToOwner = _logic getVariable "maxDistanceToOwner";
 
 switch(_enemiesSide) do
 {
@@ -28,6 +31,9 @@ assignVariable(X39_GM_Insurgency_var_DeathTimeOut, _deathTimeout)
 assignVariable(X39_GM_Insurgency_var_MaxUnitsPerPlayer, _maxUnitsPerPlayer)
 assignVariable(X39_GM_Insurgency_var_MaxUnitsPerSquare, _maxUnitsPerSquare)
 assignVariable(X39_GM_Insurgency_var_spawnRange, _spawnrange)
+assignVariable(X39_GM_Insurgency_var_minDistanceToPlayableUnitsForSpawn, _minDistanceToPlayableUnitsForSpawn)
+assignVariable(X39_GM_Insurgency_var_maxDistanceToUnitGrid, _maxDistanceToUnitGrid)
+assignVariable(X39_GM_Insurgency_var_maxDistanceToOwner, _maxDistanceToOwner)
 assignVariable(X39_GM_Insurgency_var_serverDone, false)
 assignVariable(X39_GM_Insurgency_var_globalGroup, grpNull)
 
@@ -100,6 +106,9 @@ if(isServer) then
 	publicVariable "X39_GM_Insurgency_var_MaxUnitsPerSquare";
 	publicVariable "X39_GM_Insurgency_var_spawnRange";
 	publicVariable "X39_GM_Insurgency_var_globalGroup";
+	publicVariable "X39_GM_Insurgency_var_minDistanceToPlayableUnitsForSpawn";
+	publicVariable "X39_GM_Insurgency_var_maxDistanceToUnitGrid";
+	publicVariable "X39_GM_Insurgency_var_maxDistanceToOwner";
 	publicVariable "X39_GM_Insurgency_var_serverDone";
 };
 if(!isDedicated) then

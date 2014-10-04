@@ -39,7 +39,7 @@
 	#define return
 	
 	#ifndef DEBUG
-		#define DEBUG
+//		#define DEBUG
 	#endif
 
 	#ifndef DEBUG

@@ -1,3 +1,4 @@
+#include "\X39_XLib_ModProperties\default.hpp"
 /**
  *	automatically callen in preInit
  *	Initializes the internal variables

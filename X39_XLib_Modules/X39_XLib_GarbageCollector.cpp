@@ -13,6 +13,8 @@ class X39_XLib_GarbageCollector: Module_F
 	isPersistent = 1;
 	isTriggerActivated = 0;
 	isDisposable = 0;
+
+
 	class Arguments
 	{
 		class checkRate

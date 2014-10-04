@@ -51,6 +51,7 @@ class CfgFunctions{
 			
 			class getUnitsBearing:X39_XLib_Function_TypeA				{file = "\X39_XLib_Core\XLib\Functions\getUnitsBearing.sqf";};
 			class intToBool:X39_XLib_Function_TypeA						{file = "\X39_XLib_Core\XLib\Functions\intToBool.sqf";};
+			class scalarToBool:X39_XLib_Function_TypeA						{file = "\X39_XLib_Core\XLib\Functions\intToBool.sqf";};
 			
 			class isUnitInShelter:X39_XLib_Function_TypeA				{file = "\X39_XLib_Core\XLib\Functions\isUnitInShelter.sqf";};
 			class isUnitInOpenArea:X39_XLib_Function_TypeA				{file = "\X39_XLib_Core\XLib\Functions\isUnitInOpenArea.sqf";};
@@ -58,6 +59,7 @@ class CfgFunctions{
 			class convertCodeToString:X39_XLib_Function_TypeA			{file = "\X39_XLib_Core\XLib\Functions\convertCodeToString.sqf";};
 			
 			class damageTypeFromProjectile:X39_XLib_Function_TypeA		{file = "\X39_XLib_Core\XLib\Functions\damageTypeFromProjectile.sqf";};
+			class executeLocalToUnit:X39_XLib_Function_TypeA			{file = "\X39_XLib_Core\XLib\Functions\executeLocalToUnit.sqf";};
 		};
 		class X39_ActionTracker{
 			class runActionTracker:X39_XLib_Function_TypeA				{file = "\X39_XLib_Core\XLib\Functions\actionTracker\Init.sqf";};
@@ -72,5 +74,14 @@ class CfgFactionClasses
 		displayName = "XLib";
 		priority = 1;
 		side = 7;
+	};
+};
+
+class CfgWeapons {
+	class ItemCore;
+	class x39_itemcore: ItemCore {
+		type = 4;
+		simulation = "ItemMineDetector";
+		detectRange = -1;
 	};
 };

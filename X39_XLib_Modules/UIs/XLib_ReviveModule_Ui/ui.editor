@@ -1,0 +1,9 @@
+$[
+	1.063,
+	["XLib_ReviveModule_Ui",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[1000,"",[1,"You are dead ...",["0.29375 * safezoneW + safezoneX","0.368 * safezoneH + safezoneY","0.4125 * safezoneW","0.055 * safezoneH"],[-1,-1,-1,-1],[0.15,0.15,0.15,0.75],[-1,-1,-1,-1],"","-1"],[]],
+	[1001,"",[1,"Time left: XXX",["0.29375 * safezoneW + safezoneX","0.434 * safezoneH + safezoneY","0.4125 * safezoneW","0.055 * safezoneH"],[-1,-1,-1,-1],[0.15,0.15,0.15,0.75],[-1,-1,-1,-1],"","-1"],[]],
+	[1002,"",[1,"<NAME> might can revive you",["0.29375 * safezoneW + safezoneX","0.5 * safezoneH + safezoneY","0.4125 * safezoneW","0.055 * safezoneH"],[-1,-1,-1,-1],[0.15,0.15,0.15,0.75],[-1,-1,-1,-1],"","-1"],[]],
+	[1600,"",[1,"Respawn",["0.29375 * safezoneW + safezoneX","0.566 * safezoneH + safezoneY","0.4125 * safezoneW","0.066 * safezoneH"],[-1,-1,-1,-1],[0.15,0.15,0.15,0.75],[0.2,0.2,0.2,0.75],"","-1"],[]],
+	[1003,"",[1,"XLib - Revive module",["-0.000156274 * safezoneW + safezoneX","0.00500001 * safezoneH + safezoneY","1.00031 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]

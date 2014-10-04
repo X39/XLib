@@ -1,4 +1,5 @@
 #include "\X39_XLib_ModProperties\modPropertiesIncludes.hpp"
+
 class CfgPatches{
 	class X39_XLib_ActionDialog{
          units[] = {};
@@ -36,19 +37,19 @@ class XLib {
 		class propertyBase;
 		class valueBase;
 		class modBase;
-		class X39_XLib_ActionDialog: modBase {
+		class X39_XLib_Configuration: modBase {
 			scope = 2;
-			name = "XLib Action Dialog";
+			name = "XLib Configuration";
 			image = "\X39_XLib_Core\XLib_logo.paa";
 			class properties {
-				class selfInteraction: propertyBase {
+				class X39_XLib_ActionDialog_selfInteraction: propertyBase {
 					variable = "X39_XLib_var_ActionDialog_selfInteraction";
 					display = "Self interaction key";
 					type = TYPE_KEY;
 					description = "Key for self interaction";
 					default[] = {211, 0, 0, 0};
 				};
-				class otherInteraction: propertyBase {
+				class X39_XLib_ActionDialog_otherInteraction: propertyBase {
 					variable = "X39_XLib_var_ActionDialog_otherInteraction";
 					display = "Others interaction key";
 					type = TYPE_KEY;
