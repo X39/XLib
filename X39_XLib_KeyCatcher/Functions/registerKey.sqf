@@ -2,7 +2,7 @@
 /*	
  *	Registers a new key
  *
- *	@Param1 - SCALAR	- KeyCode
+ *	@Param1 - SCALAR		- KeyCode
  *	@Param2 - BOOL		- shift pressed
  *	@Param3 - BOOL		- ctrl pressed
  *	@Param4 - BOOL		- alt pressed
