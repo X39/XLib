@@ -62,14 +62,14 @@ class XLib {
 			image = "\X39_XLib_Core\XLib_logo.paa";
 			class properties {
 				class X39_XLib_RequestSystem_Accept: propertyBase {
-					variable = "X39_XLib_fnc_RequestSystem_Accept";
+					variable = "X39_XLib_var_RequestSystem_Accept";
 					display = "Accept request key";
 					type = TYPE_KEY;
 					description = "";
 					default[] = {211, 0, 0, 0};
 				};
 				class X39_XLib_RequestSystem_Deny: propertyBase {
-					variable = "X39_XLib_fnc_RequestSystem_Deny";
+					variable = "X39_XLib_var_RequestSystem_Deny";
 					display = "Deny request key";
 					type = TYPE_KEY;
 					description = "";

@@ -16,6 +16,7 @@ _deathTimeout = _logic getVariable "deathTimeout";
 _minDistanceToPlayableUnitsForSpawn = _logic getVariable "minDistanceToPlayableUnitsForSpawn";
 _maxDistanceToUnitGrid = _logic getVariable "maxDistanceToUnitGrid";
 _maxDistanceToOwner = _logic getVariable "maxDistanceToOwner";
+_enemySideSpawning = (_logic getVariable ["enemySideSpawning", 1]) call X39_XLib_fnc_ScalarToBool;
 
 switch(_enemiesSide) do
 {
@@ -34,6 +35,7 @@ assignVariable(X39_GM_Insurgency_var_spawnRange, _spawnrange)
 assignVariable(X39_GM_Insurgency_var_minDistanceToPlayableUnitsForSpawn, _minDistanceToPlayableUnitsForSpawn)
 assignVariable(X39_GM_Insurgency_var_maxDistanceToUnitGrid, _maxDistanceToUnitGrid)
 assignVariable(X39_GM_Insurgency_var_maxDistanceToOwner, _maxDistanceToOwner)
+assignVariable(X39_GM_Insurgency_var_enemySideSpawning, _enemySideSpawning)
 assignVariable(X39_GM_Insurgency_var_serverDone, false)
 assignVariable(X39_GM_Insurgency_var_globalGroup, grpNull)
 

@@ -3,6 +3,9 @@
  *	NOTE:
  *	0 = false
  *	>0 = true
+ *	
+ *	Example:
+ *		1 call X39_XLib_fnc_intToBool;
  *
  *	@ParamsCount - 1
  *	@Param1 - int - N/A
