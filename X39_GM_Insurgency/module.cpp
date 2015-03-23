@@ -133,7 +133,7 @@ class X39_GM_Insurgency_Module: Module_F
 			class values : ArgumentsBaseUnits
 			{
 				class opt_1	{name = "Yes"; value = 1; default = 1;};
-				class opt_2 {name = "No"; value = 1; default = 0;};
+				class opt_2 {name = "No"; value = 0; default = 0;};
 			};
 		};
 		class hcUnitName

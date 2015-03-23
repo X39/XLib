@@ -26,6 +26,7 @@ class CfgFunctions
 			class X39_XLib_Resupply:X39_XLib_Function_TypeA							{file = "\X39_XLib_Modules\ModuleFunctions\X39_XLib_Resupply.sqf";};
 			class X39_XLib_AmmoCaches:X39_XLib_Function_TypeA						{file = "\X39_XLib_Modules\ModuleFunctions\X39_XLib_AmmoCaches.sqf";};
 			class X39_XLib_ShowFactionNamesAndRank:X39_XLib_Function_TypeA			{file = "\X39_XLib_Modules\ModuleFunctions\X39_XLib_ShowFactionNamesAndRank.sqf";};
+			class X39_XLib_CivilianModule:X39_XLib_Function_TypeA					{file = "\X39_XLib_Modules\ModuleFunctions\X39_XLib_CivilianModule.sqf";};
 		};
 		class ZeusModuleFunctions
 		{
@@ -69,6 +70,7 @@ class CfgVehicles
 	#include "X39_XLib_ShowFactionNamesAndRank.cpp"
 	//#include "X39_XLib_Zeus_disableAi.cpp"
 	//#include "X39_XLib_IEDPlacement.cpp"
+	#include "X39_XLib_CivilianPopulation.cpp"
 };
 
 //#include "\X39_XLib_Modules\UIs\XLib_ReviveModule_Ui\ui.hpp"
