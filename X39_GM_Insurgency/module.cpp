@@ -125,6 +125,17 @@ class X39_GM_Insurgency_Module: Module_F
 				class opt_7	{name = "1:10"; value = 10; default = 0;};
 			};
 		};
+		class enemySideSpawning
+		{
+			displayName = "EnemySideSpawning";
+			description = "Sets whether when a player is on the same side like the enemies side set here will trigger unit spawn";
+			typeName = "NUMBER";
+			class values : ArgumentsBaseUnits
+			{
+				class opt_1	{name = "Yes"; value = 1; default = 1;};
+				class opt_2 {name = "No"; value = 0; default = 0;};
+			};
+		};
 		class hcUnitName
 		{
 			displayName = "HC UnitName";

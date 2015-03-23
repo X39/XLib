@@ -1,18 +1,22 @@
 //Please note that the reduntant coding here is done for performance reasons! If it wasnt done like this arma could lag more then it needs during the draw3D calls ...
 //FONTSIZEBASE = 0.1; publicVariable "FONTSIZEBASE";X39_XLib_ShowFactionNamesAndRank_VAR_displayColor = [1,1,1,1]; publicVariable "X39_XLib_ShowFactionNamesAndRank_VAR_displayColor";
 #define FONTSIZEBASE 0.1
-#define SHOWRANK ((_this select 0) getVariable "showRank") call X39_XLib_fnc_scalarToBool
-#define SHOWTYPE ((_this select 0) getVariable "showType") call X39_XLib_fnc_scalarToBool
-#define ALLOWROTATINGRANK ((_this select 0) getVariable "allowRotatingRank") call X39_XLib_fnc_scalarToBool
-#define ALLOWINTERSECTIONCHECK ((_this select 0) getVariable "allowIntersectionCheck") call X39_XLib_fnc_scalarToBool
+#define SHOWRANK ((_this select 0) getVariable ["showRank", 1]) call X39_XLib_fnc_scalarToBool
+#define SHOWTYPE ((_this select 0) getVariable ["showType", 0]) call X39_XLib_fnc_scalarToBool
+#define ALLOWROTATINGRANK ((_this select 0) getVariable ["allowRotatingRank", 1]) call X39_XLib_fnc_scalarToBool
+#define ALLOWINTERSECTIONCHECK ((_this select 0) getVariable ["allowIntersectionCheck", 1]) call X39_XLib_fnc_scalarToBool
 #define ROTATIONSPEED 100
-
-if(!isDedicated && hasInterface && isNil "X39_XLib_ShowFactionNamesAndRank_EH_Draw3D") then
+if(!isNil "X39_XLib_ShowFactionNamesAndRank_EH_Draw3D") then
+{
+	removeMissionEventHandler["Draw3D", X39_XLib_ShowFactionNamesAndRank_EH_Draw3D];
+	X39_XLib_ShowFactionNamesAndRank_EH_Draw3D = nil;
+};
+if(!isDedicated && hasInterface) then
 {
 	
-	X39_XLib_ShowFactionNamesAndRank_VAR_displayColor = [] call compile ((_this select 0) getVariable "displayColor");
-	X39_XLib_ShowFactionNamesAndRank_VAR_nameDisplayRange  = [] call compile ((_this select 0) getVariable ["nameDisplayRange", 50]);
-	X39_XLib_ShowFactionNamesAndRank_VAR_rankDisplayRange  = [] call compile ((_this select 0) getVariable ["rankDisplayRange", 100]);
+	X39_XLib_ShowFactionNamesAndRank_VAR_displayColor = [] call compile ((_this select 0) getVariable ["displayColor", str [1,1,1,1]]);
+	X39_XLib_ShowFactionNamesAndRank_VAR_nameDisplayRange  = [] call compile ((_this select 0) getVariable ["nameDisplayRange", str 50]);
+	X39_XLib_ShowFactionNamesAndRank_VAR_rankDisplayRange  = [] call compile ((_this select 0) getVariable ["rankDisplayRange", str 100]);
 	if(ALLOWROTATINGRANK) then
 	{
 		if(SHOWTYPE) exitWith

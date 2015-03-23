@@ -20,7 +20,7 @@ if(isNull _unit) exitWith {diag_log "_unit is null!";};
 _posX = (getPosAsl _unit) select 0;
 _posY = (getPosAsl _unit) select 1;
 _posZ = (getPosAsl _unit) select 2;
-_flag = false;
+_flag = true;
 if(	 terrainIntersectASL [[_posX + _range, _posY + _range, _posZ + _height], [_posX - _range, _posY - _range, _posZ + _height]] ||
 	{terrainIntersectASL [[_posX - _range, _posY + _range, _posZ + _height], [_posX + _range, _posY - _range, _posZ + _height]] ||
 	{terrainIntersectASL [[_posX + _range, _posY + _range, _posZ + _height], [_posX + _range, _posY - _range, _posZ + _height]] ||
@@ -29,6 +29,6 @@ if(	 terrainIntersectASL [[_posX + _range, _posY + _range, _posZ + _height], [_p
 	{terrainIntersectASL [[_posX - _range, _posY - _range, _posZ + _height], [_posX + _range, _posY - _range, _posZ + _height]]}}}}})
 then
 {
-	_flag = true;
+	_flag = false;
 };
 _flag

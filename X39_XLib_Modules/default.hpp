@@ -2,12 +2,13 @@
 #define return
 
 
-//#define DEBUG
+#define DEBUG
 
 #ifndef DEBUG
 	#define DEBUG_LOG(X) 
 	#define DEBUG_CODE(X) 
 	#define COMMA 
+	#define PREVENTCALLOUTPUT
 #else
 	#define DEBUG_LOG(X) diag_log (X);
 	#define DEBUG_CODE(X) X;
