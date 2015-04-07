@@ -50,6 +50,7 @@ class CfgFunctions{
 			class getAllHousesOnMapPerGrid:X39_XLib_Function_TypeA				{file = "\X39_XLib_Core\XLib\Functions\mapOperations\getAllHousesOnMapPerGrid.sqf";};
 			
 			class getUnitsBearing:X39_XLib_Function_TypeA						{file = "\X39_XLib_Core\XLib\Functions\getUnitsBearing.sqf";};
+			class getUnitsBearingCamera: X39_XLib_Function_TypeA				{file = "\X39_XLib_Core\XLib\Functions\getUnitsBearingCamera.sqf";};
 			class intToBool:X39_XLib_Function_TypeA								{file = "\X39_XLib_Core\XLib\Functions\intToBool.sqf";};
 			class scalarToBool:X39_XLib_Function_TypeA							{file = "\X39_XLib_Core\XLib\Functions\intToBool.sqf";};
 			
