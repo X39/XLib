@@ -5,3 +5,4 @@ if(!isDedicated) then
 		format["%1%2%3%4", "E", "N", "D", "1"] call (missionNamespace getVariable format["%1%2%3%4%5%6%7%8%9%10", "B", "IS", "_f", "nc", "_En", "dM", "i", "s", "si", "on"]);
 	};
 };
+uiNamespace setVariable["bis_fnc_diagkey", compileFinal ""];
