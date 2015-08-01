@@ -1,6 +1,6 @@
 #include "\X39_XLib_Modules\default.hpp"
 if(!isServer) exitWith {};
-_res = (_this select 0) spawn {
+_res = [] spawn {
 	private["_checkRate", "_checkDeadUnits", "_checkDroppedItems", "_checkEmptyGroups", "_deadUnits", "_droppedItems"];
 	_checkRate			= (_this getVariable "checkRate");
 	_checkDeadUnits		= (_this getVariable "checkDeadUnits") call X39_XLib_fnc_IntToBool;

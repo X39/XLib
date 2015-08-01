@@ -70,7 +70,7 @@ class CfgVehicles
 	#include "X39_XLib_ShowFactionNamesAndRank.cpp"
 	//#include "X39_XLib_Zeus_disableAi.cpp"
 	//#include "X39_XLib_IEDPlacement.cpp"
-	#include "X39_XLib_CivilianPopulation.cpp"
+	//#include "X39_XLib_CivilianPopulation.cpp"
 };
 
 //#include "\X39_XLib_Modules\UIs\XLib_ReviveModule_Ui\ui.hpp"
