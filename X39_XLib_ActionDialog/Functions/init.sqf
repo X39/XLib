@@ -25,7 +25,7 @@ if(hasInterface) then
 	_res = [] spawn {
 		DEBUG_CODE_SC(_fnc_scriptName = "X39_XLib_fnc_ActionDialog_init")
 		waitUntil{!isNil "X39_XLib_fnc_registerKey"};
-		[0, false, false, false, {if(X39_XLib_var_ActionDialog_preventMenuOpening) exitWith {}; [] call X39_XLib_fnc_ActionDialog_createDialog;	[false] call X39_XLib_fnc_ActionDialog_initSystemVariables;	[] call X39_XLib_fnc_ActionDialog_initActions;}, "X39_XLib_var_ActionDialog_selfInteraction"]	call X39_XLib_fnc_registerKey;
-		[0, false, false, false, {if(isNull cursorTarget) exitWith {}; if(X39_XLib_var_ActionDialog_preventMenuOpening) exitWith {}; [] call X39_XLib_fnc_ActionDialog_createDialog;	[true] call X39_XLib_fnc_ActionDialog_initSystemVariables;	[] call X39_XLib_fnc_ActionDialog_initActions;}, "X39_XLib_var_ActionDialog_otherInteraction"]	call X39_XLib_fnc_registerKey;
+		[0, false, false, false, {if(X39_XLib_var_ActionDialog_preventMenuOpening) exitWith {}; [] call X39_XLib_fnc_ActionDialog_createDialog;	[false] call X39_XLib_fnc_ActionDialog_initSystemVariables;	[] call X39_XLib_fnc_ActionDialog_initActions; true}, "X39_XLib_var_ActionDialog_selfInteraction"]	call X39_XLib_fnc_registerKey;
+		[0, false, false, false, {if(isNull cursorTarget) exitWith {}; if(X39_XLib_var_ActionDialog_preventMenuOpening) exitWith {}; [] call X39_XLib_fnc_ActionDialog_createDialog;	[true] call X39_XLib_fnc_ActionDialog_initSystemVariables;	[] call X39_XLib_fnc_ActionDialog_initActions; true}, "X39_XLib_var_ActionDialog_otherInteraction"]	call X39_XLib_fnc_registerKey;
 	};
 };

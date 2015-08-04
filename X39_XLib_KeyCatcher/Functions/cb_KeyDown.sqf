@@ -12,24 +12,26 @@
  *	@Return - N/A
  *	@Author - X39|Cpt. HM Murdock
  */
-_i = 0;
 _handled = false;
+scopeName "out";
 {
 	scopeName "out";
-	if(!ISSCALAR(X39_XLib_var_Keys select _i))then
+	if(!ISSCALAR(_x))then
 	{
-		_currentKey = profileNamespace getVariable [(X39_XLib_var_Keys select _i select 0), (X39_XLib_var_Keys select _i select 2)];
+		_currentKey = profileNamespace getVariable [(_x select 0), (_x select 2)];
 		if(_this select 1 == _currentKey select 0) then {
 			if(( (_this select 2 && _currentKey select 1) || (!(_this select 2) && !(_currentKey select 1)) ) &&
 			   ( (_this select 3 && _currentKey select 2) || (!(_this select 3) && !(_currentKey select 2)) ) &&
 			   ( (_this select 4 && _currentKey select 3) || (!(_this select 4) && !(_currentKey select 3)) )) then {
-				_this call (X39_XLib_var_Keys select _i select 1);
-				_handled = true;
-				breakOut "out";
+				_res = _this call (_x select 1);
+				_handled = if(isNil "_res") then {true} else {_res};
+				if(_handled) then
+				{
+					breakTo "out";
+				};
 			};
 		};
 	};
-	_i = _i + 1;
 	false
 }count X39_XLib_var_Keys;
 _handled
