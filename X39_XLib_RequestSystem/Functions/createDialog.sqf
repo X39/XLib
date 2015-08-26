@@ -9,11 +9,6 @@ if(isNull (uiNamespace getVariable ["XLib_RequestSystem_Ui", displayNull])) then
 	displayControl(IDC_XLIB_ADUI_RSCTEXT_1003) ctrlShow false;
 	displayControl(IDC_XLIB_ADUI_IGUIBACK_2203) ctrlShow false;
 	X39_XLib_fnc_RequestSystem_uiHandle = _this spawn {
-		private["_text", "_callbackFunction", "_sender", "_target", "_key", "_txt"];
-		_text =				_this select 0;
-		_callbackFunction =	_this select 1;
-		_sender =			_this select 2;
-		_target =			_this select 3;
 		_lastRequest = [];
 		
 		//----------------------------------------------------
