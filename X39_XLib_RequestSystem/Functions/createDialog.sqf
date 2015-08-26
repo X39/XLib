@@ -18,7 +18,7 @@ if(isNull (uiNamespace getVariable ["XLib_RequestSystem_Ui", displayNull])) then
 		
 		//----------------------------------------------------
 		
-		_key = profileNamespace getVariable ["X39_XLib_fnc_RequestSystem_Accept", [-1, false, false, false]];
+		_key = ["X39_XLib_Configuration", "X39_XLib_fnc_RequestSystem_Accept"] call X39_XLib_fnc_Generic_ModProperties_getKey;//profileNamespace getVariable ["X39_XLib_fnc_RequestSystem_Accept", [-1, false, false, false]];
 		_txt = "";
 		if(_key select 0 == -1) then
 		{
@@ -35,7 +35,7 @@ if(isNull (uiNamespace getVariable ["XLib_RequestSystem_Ui", displayNull])) then
 		
 		//----------------------------------------------------
 		
-		_key = profileNamespace getVariable ["X39_XLib_fnc_RequestSystem_Deny", [-1, false, false, false]];
+		_key = ["X39_XLib_Configuration", "X39_XLib_fnc_RequestSystem_Deny"] call X39_XLib_fnc_Generic_ModProperties_getKey;//profileNamespace getVariable ["X39_XLib_fnc_RequestSystem_Deny", [-1, false, false, false]];
 		_txt = "";
 		if(_key select 0 == -1) then
 		{
@@ -62,7 +62,7 @@ if(isNull (uiNamespace getVariable ["XLib_RequestSystem_Ui", displayNull])) then
 			if(isNil "X39_XLib_fnc_RequestSystem_CurrentRequest") exitWith {X39_XLib_fnc_RequestSystem_CurrentRequest = []; breakOut "loopScope";};
 			if(str _lastRequest != str X39_XLib_fnc_RequestSystem_CurrentRequest) then
 			{
-				X39_XLib_fnc_RequestSystem_currentRequestStartTime = time;
+				X39_XLib_fnc_RequestSystem_currentRequestStartTime = diag_ticktime;
 			};
 			
 			if(count X39_XLib_fnc_RequestSystem_LocalRequests > 1) then
@@ -93,7 +93,7 @@ if(isNull (uiNamespace getVariable ["XLib_RequestSystem_Ui", displayNull])) then
 				};
 			};
 			displayControl(IDC_XLIB_ADUI_RSCTEXT_1000) ctrlSetText (X39_XLib_fnc_RequestSystem_CurrentRequest select 0);
-			if(time - X39_XLib_fnc_RequestSystem_currentRequestStartTime > REQUESTSYSTEM_TIMEOUT) then
+			if(diag_ticktime - X39_XLib_fnc_RequestSystem_currentRequestStartTime > REQUESTSYSTEM_TIMEOUT) then
 			{
 				if(X39_XLib_fnc_RequestSystem_CurrentRequest select 3) then
 				{

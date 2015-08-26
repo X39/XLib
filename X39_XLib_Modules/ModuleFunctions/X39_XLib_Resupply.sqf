@@ -38,23 +38,44 @@ _res = (_this select 0) spawn {
 				DEBUG_CODE(diag_log format["X39_XLib_Resupply: Rolls %1 object ('%2') is close enough for handle! Started Handle" COMMA _rand COMMA _obj])
 				_lastObj = _obj;
 				{[[_obj, "Servicing vehicle"], "X39_XLib_Modules_fnc_Helper_vehicleChat", _x, false] call BIS_fnc_MP; false} count (crew _obj);
-				[[[_obj, 0], {(_this select 0) setFuel (_this select 1);}], "X39_XLib_Modules_fnc_Helper_execCode", _obj, false] call BIS_fnc_MP;
+				
+				{[[[_obj, 0], {(_this select 0) setFuel (_this select 1);}], "X39_XLib_Modules_fnc_Helper_execCode", _obj, false] call BIS_fnc_MP;
 				{[[_obj, "Resupplying ammo ..."], "X39_XLib_Modules_fnc_Helper_vehicleChat", _x, false] call BIS_fnc_MP; false} count (crew _obj);
 				sleep 1;
 				
-				[[[_obj, 0.25], {(_this select 0) setVehicleAmmo (_this select 1);}], "X39_XLib_Modules_fnc_Helper_execCode", _obj, false] call BIS_fnc_MP;
+				{[[[_obj, 0.25], {(_this select 0) setVehicleAmmo (_this select 1);}], "X39_XLib_Modules_fnc_Helper_execCode", vehicle _x, false] call BIS_fnc_MP; false} count (crew _obj);
 				{[[_obj, "Ammo: 25%"], "X39_XLib_Modules_fnc_Helper_vehicleChat", _x, false] call BIS_fnc_MP; false} count (crew _obj);
-				sleep 3;
+				sleep 2;
 				
-				[[[_obj, 0.5], {(_this select 0) setVehicleAmmo (_this select 1);}], "X39_XLib_Modules_fnc_Helper_execCode", _obj, false] call BIS_fnc_MP;
+				{[[[_obj, 0.5], {(_this select 0) setVehicleAmmo (_this select 1);}], "X39_XLib_Modules_fnc_Helper_execCode", vehicle _x, false] call BIS_fnc_MP; false} count (crew _obj);
 				{[[_obj, "Ammo: 50%"], "X39_XLib_Modules_fnc_Helper_vehicleChat", _x, false] call BIS_fnc_MP; false} count (crew _obj);
-				sleep 3;
+				sleep 2;
 				
-				[[[_obj, 0.75], {(_this select 0) setVehicleAmmo (_this select 1);}], "X39_XLib_Modules_fnc_Helper_execCode", _obj, false] call BIS_fnc_MP;
+				{[[[_obj, 0.75], {(_this select 0) setVehicleAmmo (_this select 1);}], "X39_XLib_Modules_fnc_Helper_execCode", vehicle _x, false] call BIS_fnc_MP; false} count (crew _obj);
 				{[[_obj, "Ammo: 75%"], "X39_XLib_Modules_fnc_Helper_vehicleChat", _x, false] call BIS_fnc_MP; false} count (crew _obj);
-				sleep 3;
+				sleep 2;
 				
-				[[[_obj, 1], {(_this select 0) setVehicleAmmo (_this select 1);}], "X39_XLib_Modules_fnc_Helper_execCode", _obj, false] call BIS_fnc_MP;
+				{[[[_obj, 1], {(_this select 0) setVehicleAmmo (_this select 1);}], "X39_XLib_Modules_fnc_Helper_execCode", vehicle _x, false] call BIS_fnc_MP; false} count (crew _obj);
+				{[[_obj, "Ammo: Done"], "X39_XLib_Modules_fnc_Helper_vehicleChat", _x, false] call BIS_fnc_MP; false} count (crew _obj);
+				sleep 1;
+				
+				
+				{[[_obj, "Repairing ..."], "X39_XLib_Modules_fnc_Helper_vehicleChat", _x, false] call BIS_fnc_MP; false} count (crew _obj);
+				sleep 1;
+				
+				[[[_obj, 0.25], {(_this select 0) setDamage (_this select 1);}], "X39_XLib_Modules_fnc_Helper_execCode", vehicle _obj, false] call BIS_fnc_MP;
+				{[[_obj, "Repairing: 25%"], "X39_XLib_Modules_fnc_Helper_vehicleChat", _x, false] call BIS_fnc_MP; false} count (crew _obj);
+				sleep 2;
+				
+				[[[_obj, 0.5], {(_this select 0) setDamage (_this select 1);}], "X39_XLib_Modules_fnc_Helper_execCode", vehicle _obj, false] call BIS_fnc_MP;
+				{[[_obj, "Repairing: 50%"], "X39_XLib_Modules_fnc_Helper_vehicleChat", _x, false] call BIS_fnc_MP; false} count (crew _obj);
+				sleep 2;
+				
+				[[[_obj, 0.75], {(_this select 0) setDamage (_this select 1);}], "X39_XLib_Modules_fnc_Helper_execCode", vehicle _obj, false] call BIS_fnc_MP;
+				{[[_obj, "Repairing: 75%"], "X39_XLib_Modules_fnc_Helper_vehicleChat", _x, false] call BIS_fnc_MP; false} count (crew _obj);
+				sleep 2;
+				
+				[[[_obj, 1], {(_this select 0) setDamage (_this select 1);}], "X39_XLib_Modules_fnc_Helper_execCode", vehicle _obj, false] call BIS_fnc_MP;
 				{[[_obj, "Ammo: Done"], "X39_XLib_Modules_fnc_Helper_vehicleChat", _x, false] call BIS_fnc_MP; false} count (crew _obj);
 				sleep 1;
 				
@@ -63,19 +84,19 @@ _res = (_this select 0) spawn {
 				{[[_obj, "Refueling ..."], "X39_XLib_Modules_fnc_Helper_vehicleChat", _x, false] call BIS_fnc_MP; false} count (crew _obj);
 				sleep 1;
 				
-				[[[_obj, 0.25], {(_this select 0) setFuel (_this select 1);}], "X39_XLib_Modules_fnc_Helper_execCode", _obj, false] call BIS_fnc_MP;
+				{[[[_obj, 0.25], {(_this select 0) setFuel (_this select 1);}], "X39_XLib_Modules_fnc_Helper_execCode", vehicle _x, false] call BIS_fnc_MP; false} count (crew _obj);
 				{[[_obj, "Fuel: 25%"], "X39_XLib_Modules_fnc_Helper_vehicleChat", _x, false] call BIS_fnc_MP; false} count (crew _obj);
-				sleep 3;
+				sleep 2;
 				
-				[[[_obj, 0.50], {(_this select 0) setFuel (_this select 1);}], "X39_XLib_Modules_fnc_Helper_execCode", _obj, false] call BIS_fnc_MP;
+				{[[[_obj, 0.50], {(_this select 0) setFuel (_this select 1);}], "X39_XLib_Modules_fnc_Helper_execCode", vehicle _x, false] call BIS_fnc_MP; false} count (crew _obj);
 				{[[_obj, "Fuel: 50%"], "X39_XLib_Modules_fnc_Helper_vehicleChat", _x, false] call BIS_fnc_MP; false} count (crew _obj);
-				sleep 3;
+				sleep 2;
 				
-				[[[_obj, 0.75], {(_this select 0) setFuel (_this select 1);}], "X39_XLib_Modules_fnc_Helper_execCode", _obj, false] call BIS_fnc_MP;
+				{[[[_obj, 0.75], {(_this select 0) setFuel (_this select 1);}], "X39_XLib_Modules_fnc_Helper_execCode", vehicle _x, false] call BIS_fnc_MP; false} count (crew _obj);
 				{[[_obj, "Fuel: 75%"], "X39_XLib_Modules_fnc_Helper_vehicleChat", _x, false] call BIS_fnc_MP; false} count (crew _obj);
-				sleep 3;
+				sleep 2;
 				
-				[[[_obj, 1], {(_this select 0) setFuel (_this select 1);}], "X39_XLib_Modules_fnc_Helper_execCode", _obj, false] call BIS_fnc_MP;
+				{[[[_obj, 1], {(_this select 0) setFuel (_this select 1);}], "X39_XLib_Modules_fnc_Helper_execCode", vehicle _x, false] call BIS_fnc_MP; false} count (crew _obj);
 				{[[_obj, "Fuel: Done"], "X39_XLib_Modules_fnc_Helper_vehicleChat", _x, false] call BIS_fnc_MP; false} count (crew _obj);
 				sleep 1;
 				

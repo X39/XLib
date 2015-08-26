@@ -79,6 +79,6 @@
 	#define assignValue(NAM,VAL) assignValue3(NAM,VAL,missionNamespace)
 	DEBUG_LOG(format["%3: %1 call %2" COMMA _this COMMA _fnc_scriptName COMMA diag_tickTime]);
 	
-	#define REQUESTSYSTEM_TIMEOUT 60
+	#define REQUESTSYSTEM_TIMEOUT (profileNamespace getVariable["X39_XLib_var_RequestSystem_RequestTime", 10])
 	
 //#endif

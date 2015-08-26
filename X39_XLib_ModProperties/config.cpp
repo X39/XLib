@@ -57,6 +57,11 @@ class X39_XLib_Function_TypeC;
 class CfgFunctions {
 	class X39_XLib
 	{
+		class Generic
+		{
+			class Generic_ModProperties_initMod:X39_XLib_Function_TypeB				{file = "\X39_XLib_ModProperties\Functions\initMod.sqf";};
+			class Generic_ModProperties_getKey:X39_XLib_Function_TypeA				{file = "\X39_XLib_ModProperties\Functions\getKey.sqf";};
+		};
 		class ModProperties
 		{
 			class ModProperties_createDialog:X39_XLib_Function_TypeA				{file = "\X39_XLib_ModProperties\Functions\ModConfigurationUi\createDialog.sqf";};

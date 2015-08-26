@@ -63,17 +63,24 @@ class XLib {
 			class properties {
 				class X39_XLib_RequestSystem_Accept: propertyBase {
 					variable = "X39_XLib_var_RequestSystem_Accept";
-					display = "Accept request key";
+					display = "Request System - Accept request key";
 					type = TYPE_KEY;
 					description = "";
 					default[] = {211, 0, 0, 0};
 				};
 				class X39_XLib_RequestSystem_Deny: propertyBase {
 					variable = "X39_XLib_var_RequestSystem_Deny";
-					display = "Deny request key";
+					display = "Request System - Deny request key";
 					type = TYPE_KEY;
 					description = "";
 					default[] = {210, 0, 0, 0};
+				};
+				class X39_XLib_var_RequestSystem_RequestTime: propertyBase {
+					variable = "X39_XLib_var_RequestSystem_RequestTime";
+					display = "Request System - AutoAccept time";
+					type = TYPE_VALUE;
+					description = "Time before requests are automatically accepted";
+					value = 10;
 				};
 			};
 		};
