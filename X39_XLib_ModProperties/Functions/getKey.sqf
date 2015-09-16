@@ -9,7 +9,7 @@
  *	@Return - NA
  *	@Author - X39|Cpt. HM Murdock
  */
-params[["_baseClass", "", [""]], "_propertie", "", [""]]
+params[["_baseClass", "", [""]], "_propertie", "", [""]];
 private "_value";
 X39_XLib_var_ModProperties_getFunction = compile getText (configFile >> "XLib" >> "modProperties" >> _baseClass >> "getFunction");
 
